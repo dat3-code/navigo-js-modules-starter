@@ -3,7 +3,6 @@ import "https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"
 
 import { setActiveLink } from "./utils.js"
 
-
 window.addEventListener("load", async () => {
   
   let  router = new Navigo("/", { hash: true });
@@ -24,11 +23,11 @@ window.addEventListener("load", async () => {
         `<h2>Home</h2>
          <p>This is the content of the Home Route</p>
      `,
-      "/about": () => contentDiv.innerText= "About",
-      "/users": () => contentDiv.innerText = "Users",
-      "/find-user": () => contentDiv.innerText = "Find User",
+      "/about": () => contentDiv.innerHTML= "<div>About</div><div>########</div><div>########</div>",
+      "/users": () => contentDiv.innerHTML= "<div>USERS</div><div>########</div><div>########</div>",
+      "/find-user": () => contentDiv.innerHTML= "<div>FIND USER</div><div>########</div><div>########</div>",
       "/navigate-programmatically": () => contentDiv.innerText = "Navigate Programmatically",
-      "/show-match": () => contentDiv.innerText = "Show Match",
+      "/show-match": () => contentDiv.innerHTML= "<div>SHOW MATCH</div><div>########</div><div>########</div>",
     })
     .notFound(() => contentDiv.innerText = "Not FOUND")
     .resolve()
