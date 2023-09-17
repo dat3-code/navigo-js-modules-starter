@@ -2,6 +2,7 @@ import "https://unpkg.com/navigo"  //Will create the global Navigo object used b
 import "https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"
 
 import { setActiveLink } from "./utils.js"
+import {initAndGetPage as notFoundPage} from "./pages/notFound.js"
 
 window.addEventListener("load", async () => {
   
@@ -29,7 +30,7 @@ window.addEventListener("load", async () => {
       "/navigate-programmatically": () => contentDiv.innerText = "Navigate Programmatically",
       "/show-match": () => contentDiv.innerHTML= "<div>SHOW MATCH</div><div>########</div><div>########</div>",
     })
-    .notFound(() => contentDiv.innerText = "Not FOUND")
+    .notFound(() => notFoundPage("content"))
     .resolve()
 });
 
