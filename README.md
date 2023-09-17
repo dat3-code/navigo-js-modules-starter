@@ -23,7 +23,7 @@ TBD See video for a demonstration and argumentation for the above
 			"//import { addContentToDOM } from '../utils.js'",
 			
 			"",
-			"const html = /*HTML*/ `",
+			"const html = `",
 			"",
 			"<h2>${1:Title}</h2>",
 			"<!-- Add your HTML HERE -->",
