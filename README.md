@@ -11,7 +11,7 @@ I also recommend that you install this snippet
 - Give it the name navigo
 - Delete everything in the file and Copy/paste the content below into the snippet-file
 
-TBD See video for a demonstration and argumentation for the above
+See [video for a demonstration](https://www.youtube.com/watch?v=qsaIdvaweT4) and argumentation for the above
 
 ```
 {
